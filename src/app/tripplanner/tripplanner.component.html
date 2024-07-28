@@ -1,0 +1,50 @@
+<div class="trip-planner">
+  <h1 class="title">Plan Your Next Adventure</h1>
+  
+  <form [formGroup]="tripPlannerForm" (ngSubmit)="onSubmit()">
+    <label class="title2">Where do you want to go? :</label><br>
+    <select class="country" id="country" name="country">
+      <option value="us">Tunisia</option>
+      <option value="ca">Canada</option>
+      <option value="uk">United States</option>
+      <option value="au">Italy</option>
+      <option value="de">Germany</option>
+      <option value="fr">France</option>
+      <option value="jp">Japan</option>
+      <!-- Add more countries as needed -->
+    </select><br>
+
+    <label class="title2">Select How Many Days :</label><br>
+    <select class="country" id="days" name="country">
+      <option value="1">1 Day</option>
+      <option value="2">2 Days</option>
+      <option value="3">3 Days</option>
+      <option value="4">4 Days</option>
+      <option value="5">5 Days</option>
+      <option value="6">6 Days</option>
+      <option value="7">1 Week</option>
+      <!-- Add more days as needed -->
+    </select><br>
+
+    <label class="title2 title3">Select The Kind Of Activities You Want To Do:</label><br>
+    <div class="checkbox-container">
+      <input type="checkbox" id="historical" name="activity">
+      <label for="historical" class="cattitle">Historical</label>
+      <input type="checkbox" id="adventure" name="activity">
+      <label for="adventure" class="cattitle">Adventure & Nature</label>
+      <input type="checkbox" id="culinary" name="activity">
+      <label for="culinary" class="cattitle">Culinary</label>
+    </div>
+
+    <label class="title2 title3">Select The Price Range You Prefer:</label><br>
+    <div class="checkbox-container1">
+      <input type="checkbox" id="mid-range" name="price">
+      <label for="mid-range">Mid Range</label>
+      <input type="checkbox" id="fine-dining" name="price">
+      <label for="fine-dining">Fine Dining</label>
+      <input type="checkbox" id="cheap-eats" name="price">
+      <label for="cheap-eats">Cheap Eats</label>
+    </div>
+    <button class="plan-button">Plan Your Trip</button>
+  </form>
+</div>

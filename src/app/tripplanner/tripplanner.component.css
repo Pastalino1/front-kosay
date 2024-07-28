@@ -1,0 +1,145 @@
+/* Existing global styles */
+/* Google Font Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html, body {
+  background-color: #4D9EB0;
+}
+
+.trip-planner .title {
+  color: #f8f8f8;
+  font-size: 48px; /* Larger font size */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 90px;
+  letter-spacing: 1.5px; /* Spacing between letters */
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Drop shadow effect */
+}
+
+.trip-planner form {
+  background-color: #f8f8f8;
+  border-radius: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1145px;
+  width: 100%;
+  padding: 50px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.trip-planner .title2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.trip-planner .country {
+  padding: 10px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 16px;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #4D9EB0; /* Black border, 2px wide */
+  border-radius: 15px;
+}
+
+/* Checkbox styles */
+.trip-planner .checkbox-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.trip-planner .checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+.trip-planner .checkbox-container label {
+  display: block;
+  padding: 15px 25px;
+  background-color: #4D9EB0;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.trip-planner .checkbox-container input[type="checkbox"]:checked + label {
+  background-color: #043943;
+}
+
+.trip-planner .cattitle {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* Checkbox styles for price range */
+.trip-planner .checkbox-container1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 30px;
+  margin-left: 300px;
+}
+
+.trip-planner .checkbox-container1 input[type="checkbox"] {
+  display: none;
+}
+
+.trip-planner .checkbox-container1 label {
+  display: block;
+  padding: 15px 25px;
+  background-color: #4D9EB0;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+.trip-planner .checkbox-container1 input[type="checkbox"]:checked + label {
+  background-color: #043943;
+}
+
+/* Plan button styles */
+.trip-planner .plan-button {
+  display: inline-block;
+  padding: 15px 200px; 
+  background-color: #f2f2f2;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 250px;
+}
+
+.trip-planner .plan-button:hover {
+  background-color: #e6e6e6;
+}
