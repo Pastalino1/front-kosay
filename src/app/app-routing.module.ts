@@ -5,7 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { TripplannerComponent } from './tripplanner/tripplanner.component';
-
+import { TripFormComponent } from './trip-form/trip-form.component';
+import { BeforerecComponent } from './beforerec/beforerec.component';
 const routes: Routes = [
 
   {
@@ -34,6 +35,9 @@ const routes: Routes = [
     path:'login',
     component:LoginComponent
   },
+  { path: 'trip-form', component: TripFormComponent },
+  { path: 'beforerec', component: BeforerecComponent },
+
 
   {
     path:'**',//ken ma9itch 7ata path meli moujoudin
